@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+
+<!-- Boostrap.css-link -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+
+    <!-- Tauilwind.css-link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<header>
+    <section class=" ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li tabindex="0">
+                    <a class="justify-between">
+                      Parent
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                    </a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl">BADMINTON</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal p-0">
+                <li><a>Home</a></li>
+                <li><a>Players</a></li>
+                <li><a>Success</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>About Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Log In</a>
+            </div>
+          </div>
+    </section>
+    <section>
+        <div class="carousel w-full">
+            <div class=" ">
+                <h1 class="">BADMINTON</h1>
+                <p class="">Top 10 Best Badminton Player Are Hear<br>You can choose the Player as you like
+                  .</p>
+             </div>
+            <div class="carousel-item relative w-full">
+              <img src="img/hed-1.png" class="w-full" />
+            </div> 
+          </div>
+       
+    </section>
+</header>
+<body>
+ <main>
+    <section class="container w-10/12 mx-auto mb-10 ">
+        <div class="grid grid-cols-2 flex   gap-4">
+            
+                <div class="grid grid-cols-3 gap-4  pt-5">
+ <!-- player-1 -->
+ <div class="card w-full bg-base-100 shadow-xl ">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1636439623/assets/players/thumbnail/84523" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">Michelle</h2>
+    <p>WORLD RANK-<span>13</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+<!-- player-2 -->
+<div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1658715713/assets/players/thumbnail/34810" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">
+        CHOU</h2>
+    <p>WORLD RANK-<span>10</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+ <!-- player-3 -->             
+ <div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1627948657/assets/players/thumbnail/73173" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">PUSARLA
+    </h2>
+    <p>WORLD RANK-<span>07</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+<!-- player-4 -->   
+
+<div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1657874213/assets/players/thumbnail/52748" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">Saina</h2>
+    <p>WORLD RANK-<span>09</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- player-5 -->   
+
+<div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1604895367/assets/players/thumbnail/62844" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">Gabrielle
+    </h2>
+    <p>WORLD RANK-<span>05</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+
+<!-- player-6 -->   
+
+<div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1604894662/assets/players/thumbnail/54431" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">Jan O
+    </h2>
+    <p>WORLD RANK-<span>07</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+
+<!-- player-7 -->   
+
+<div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1609731460/assets/players/thumbnail/91554" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">Anders</h2>
+    <p>WORLD RANK-<span>03</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+
+<!-- player-8 -->   
+<div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1604895749/assets/players/thumbnail/96713" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">Nozomi
+    </h2>
+    <p>WORLD RANK-<span>08</span></p>
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+
+<!-- player-9 -->   
+<div class="card w-full bg-base-100 shadow-xl">
+    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1658823118/assets/players/thumbnail/89785" alt="Shoes" class="rounded-xl" />
+  <div class="card-body items-center text-center p-5">
+    <h2 class="card-title">Kento
+    </h2>
+    <p>WORLD RANK-<span>02</span></p>
+
+    <div class="card-actions ">
+      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+        
+     <!-- TOTAL        -->
+     <div class=" pt-5 ps-10">
+                
+<h1 class="text-3xl ">
+    Total Added Player <span>0</span>
+</h1>
+<!-- tabile -->
+<div class="overflow-x-auto">
+    <table class="table w-full">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Rank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- row 1 -->
+        <tr>
+          <th>1</th>
+          <td>Cy Ganderton</td>
+          <td>Quality Control Specialist</td>
+        </tr>
+       
+    
+      </tbody>
+    </table>
+  </div>
+
+    </div>
+
+
+ </div>
+
+
+    </section>
+ </main>
+</body>
+<div class="overflow-x-auto">
+  <table class="table w-full">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Favorite Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- row 1 -->
+      <tr>
+        <th>1</th>
+        <td>Cy Ganderton</td>
+        <td>Quality Control Specialist</td>
+        <td>Blue</td>
+      </tr>
+      <!-- row 2 -->
+      <tr>
+        <th>2</th>
+        <td>Hart Hagerty</td>
+        <td>Desktop Support Technician</td>
+        <td>Purple</td>
+      </tr>
+      <!-- row 3 -->
+      <tr>
+        <th>3</th>
+        <td>Brice Swyre</td>
+        <td>Tax Accountant</td>
+        <td>Red</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer class="footer p-10 bg-base-200 text-base-content">
+    <div>
+      <span class="footer-title">Services</span> 
+      <a class="link link-hover">Branding</a> 
+      <a class="link link-hover">Design</a> 
+      <a class="link link-hover">Marketing</a> 
+      <a class="link link-hover">Advertisement</a>
+    </div> 
+    <div>
+      <span class="footer-title">Company</span> 
+      <a class="link link-hover">About us</a> 
+      <a class="link link-hover">Contact</a> 
+      <a class="link link-hover">Jobs</a> 
+      <a class="link link-hover">Press kit</a>
+    </div> 
+    <div>
+      <span class="footer-title">Legal</span> 
+      <a class="link link-hover">Terms of use</a> 
+      <a class="link link-hover">Privacy policy</a> 
+      <a class="link link-hover">Cookie policy</a>
+    </div> 
+    <div>
+      <span class="footer-title">Newsletter</span> 
+      <div class="form-control w-80">
+        <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label> 
+        <div class="relative">
+          <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" /> 
+          <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</html>
