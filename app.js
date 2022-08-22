@@ -64,14 +64,17 @@ function getValueFromTextNum(textId) {
 document.getElementById('calculate').addEventListener('click',function(){
     const selectPlayer = totalPlayerArray.length;
     const perPlayer = getValueFromInput('Per-Player');
-    let totalPlayerExpenses= perPlayer * selectPlayer;
+    const totalPlayerExpenses= perPlayer * selectPlayer;
     getValueFromText('player-expense', totalPlayerExpenses)
 })
 
 document.getElementById('total-calculate').addEventListener('click',function(){
+    const selectPlayer = totalPlayerArray.length;
+    const perPlayer = getValueFromInput('Per-Player');
+    const totalPlayerExpenses= perPlayer * selectPlayer;
     const managerCost = getValueFromInput('manager-cost');
     const coachCost = getValueFromInput('coach-cost');
-    const totalExpenses = managerCost + coachCost ;
+    const totalExpenses = managerCost + coachCost + totalPlayerExpenses ;
     getValueFromText('total-expense', totalExpenses)
 })
 
