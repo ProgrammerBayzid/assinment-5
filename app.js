@@ -8,8 +8,12 @@ function selaectedPlayerDisplay (selaectPlayer){
     tabelBody.innerHTML="";
 
      for(let i = 0; i < selaectPlayer.length ; i++){
-        if(selaectPlayer.length == 6 ){
+       
+        if(selaectPlayer.length >= 5 ){
             alert('You can not add more then 5 players');
+        }
+        else{
+        
         }
         const name = totalPlayerArray[i].playerNamne;
         const rank = totalPlayerArray[i].playerRank;
@@ -23,6 +27,7 @@ function selaectedPlayerDisplay (selaectPlayer){
      }
 }
 function addToTotalPlayer(element){
+
     const playerNamne = element.parentNode.parentNode.children[0].innerText;
     const playerRank = element.parentNode.parentNode.children[1].children[0].innerText;
     
