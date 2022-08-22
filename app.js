@@ -5,15 +5,16 @@ const totalPlayerArray=[];
 function selaectedPlayerDisplay (selaectPlayer){
     console.log(selaectPlayer);
     const tabelBody=document.getElementById('palyer-list');
+    tabelBody.innerHTML="";
 
      for(let i = 0; i< selaectPlayer.length ; i++){
         const name = totalPlayerArray[i].playerNamne;
-        const Rank = totalPlayerArray[i].playerRank;
+        const rank = totalPlayerArray[i].playerRank;
         const tr = document.createElement("tr");
         tr.innerHTML=`
-          <th></th>
-          <td></td>
-          <td></td>
+          <th>${i+1}</th>
+          <td>${name}</td>
+          <td>${rank}</td>
         `;
         tabelBody.appendChild(tr);
      }
