@@ -8,6 +8,9 @@ function selaectedPlayerDisplay (selaectPlayer){
     tabelBody.innerHTML="";
 
      for(let i = 0; i < selaectPlayer.length ; i++){
+        if(selaectPlayer.length == 6 ){
+            alert('You can not add more then 5 players');
+        }
         const name = totalPlayerArray[i].playerNamne;
         const rank = totalPlayerArray[i].playerRank;
         const tr = document.createElement("tr");

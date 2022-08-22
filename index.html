@@ -14,6 +14,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
 
+<style>
+    /* .banner{position: relative; width: ; margin: 0 auto;}
+    .banner img{width: 100%;}
+    .hedding{position:absolute; width: 100%; top: 30%; left: 850px; font-size: 50px; font-weight: 700; color: rgb(190, 61, 61);}
+    .paragrap-1{position:absolute; width: 100% ; top: 50%; left: 780px; font-size: 25px; font-weight: 700; color: beige;}
+    .paragrap-2{position:absolute; width: 100% ; top: 60%; left: 850px; font-size: 25px; font-weight: 700; color: beige;} */
+</style>
 
 </head>
 <header>
@@ -56,16 +63,18 @@
           </div>
     </section>
     <section>
-        <div class="carousel w-full">
-            <div class=" ">
-                <h1 class="">BADMINTON</h1>
-                <p class="">Top 10 Best Badminton Player Are Hear<br>You can choose the Player as you like
-                  .</p>
-             </div>
-            <div class="carousel-item relative w-full">
-              <img src="img/hed-1.png" class="w-full" />
-            </div> 
-          </div>
+         
+            <div class="">
+                 <div class="banner ">
+                       <img src="img/hed-1.png" alt="">
+                     <h1 class="hedding absolute"> BADMINTON </h1>
+                     <p class="paragrap-1 absolute">World Top 9 Badminton   Players Are Here</p>
+                     <p class="paragrap-2 absolutes top:20px; left:100px;">You Can Hire Any 5 Players</p>
+                 </div>
+            </div>
+           
+            
+          
        
     </section>
 </header>
@@ -73,188 +82,195 @@
  <main>
     <section class="container w-10/12 mx-auto mb-10 pt-20 ">
         <div class="grid grid-cols-2 flex   gap-4">
-            
-                <div class="grid grid-cols-3 gap-4  ">
- <!-- player-1 -->
- <div class="card w-full bg-base-100 shadow-xl ">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1636439623/assets/players/thumbnail/84523" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">Michelle</h2>
-    <p>WORLD RANK-<span>13</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-<!-- player-2 -->
-<div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1658715713/assets/players/thumbnail/34810" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">
-        CHOU</h2>
-    <p>WORLD RANK-<span>10</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
- <!-- player-3 -->             
- <div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1627948657/assets/players/thumbnail/73173" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">PUSARLA
-    </h2>
-    <p>WORLD RANK-<span>07</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-<!-- player-4 -->   
-
-<div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1657874213/assets/players/thumbnail/52748" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">Saina</h2>
-    <p>WORLD RANK-<span>09</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-
-
-<!-- player-5 -->   
-
-<div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1604895367/assets/players/thumbnail/62844" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">Gabrielle
-    </h2>
-    <p>WORLD RANK-<span>05</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-
-<!-- player-6 -->   
-
-<div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1604894662/assets/players/thumbnail/54431" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">Jan O
-    </h2>
-    <p>WORLD RANK-<span>07</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-
-<!-- player-7 -->   
-
-<div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1609731460/assets/players/thumbnail/91554" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">Anders</h2>
-    <p>WORLD RANK-<span>03</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-
-<!-- player-8 -->   
-<div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1604895749/assets/players/thumbnail/96713" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">Nozomi
-    </h2>
-    <p>WORLD RANK-<span>08</span></p>
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-
-<!-- player-9 -->   
-<div class="card w-full bg-base-100 shadow-xl">
-    <img src="https://res.cloudinary.com/bwf/t_96_player_profile/v1658823118/assets/players/thumbnail/89785" alt="Shoes" class="rounded-xl" />
-  <div class="card-body items-center text-center p-5">
-    <h2 class="card-title">Kento
-    </h2>
-    <p>WORLD RANK-<span>02</span></p>
-
-    <div class="card-actions ">
-      <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
-    </div>
-  </div>
-</div>
-
-    </div>
-        
+ <!-- player section             -->
+  <section>
+    <div class="grid grid-cols-3 gap-4  ">
+        <!-- player-1 -->
+             <div class="card w-full bg-base-100 shadow-xl ">
+                  <img src="img/img-1.jfif" alt="Shoes" class="rounded-xl" />
+                     <div class="card-body items-center text-center p-5">
+                         <h2 class="card-title">Michelle</h2>
+                           <p>WORLD RANK-<span>13</span></p>
+                           <div class="card-actions ">
+                       <button class="btn btn-primary px-10" onclick="addToTotalPlayer (this)">SELECT</button>
+                  </div>
+                   </div>
+            </div>
+       <!-- player-2 -->
+                   <div class="card w-full bg-base-100 shadow-xl">
+                        <img src="img/img-2.jfif" alt="Shoes" class="rounded-xl" />
+                        <div class="card-body items-center text-center p-5">
+                              <h2 class="card-title">
+                               CHOU</h2>
+                               <p>WORLD RANK-<span>10</span></p>
+                          <div class="card-actions ">
+                             <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                          </div>
+                      </div>
+                   </div>
+        <!-- player-3 -->             
+                   <div class="card w-full bg-base-100 shadow-xl">
+                          <img src="img/img-3.jfif" alt="Shoes" class="rounded-xl" />
+                       <div class="card-body items-center text-center p-5">
+                              <h2 class="card-title">PUSARLA</h2>
+                              <p>WORLD RANK-<span>07</span></p>
+                           <div class="card-actions ">
+                              <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                           </div>
+                       </div>
+                 </div>
+       <!-- player-4 -->   
+       
+                     <div class="card w-full bg-base-100 shadow-xl">
+                         <img src="img/img-4.jfif" alt="Shoes" class="rounded-xl" />
+                           <div class="card-body items-center text-center p-5">
+                               <h2 class="card-title">Saina</h2>
+                                <p>WORLD RANK-<span>09</span></p>
+                             <div class="card-actions ">
+                                <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                              </div>
+                           </div>
+                     </div>
+       
+       
+       <!-- player-5 -->   
+       
+                    <div class="card w-full bg-base-100 shadow-xl">
+                             <img src="img/img-5.jfif" alt="Shoes" class="rounded-xl" />
+                          <div class="card-body items-center text-center p-5">
+                                <h2 class="card-title">Gabrielle</h2>
+                                 <p>WORLD RANK-<span>05</span></p>
+                            <div class="card-actions ">
+                               <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                           </div>
+                        </div>
+                   </div>
+       
+       <!-- player-6 -->   
+       
+                     <div class="card w-full bg-base-100 shadow-xl">
+                              <img src="img/img-6.jfif" alt="Shoes" class="rounded-xl" />
+                             <div class="card-body items-center text-center p-5">
+                               <h2 class="card-title">Jan O </h2>
+                               <p>WORLD RANK-<span>07</span></p>
+                            <div class="card-actions ">
+                                 <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                            </div>
+                         </div>
+                    </div>
+       
+       <!-- player-7 -->   
+       
+                    <div class="card w-full bg-base-100 shadow-xl">
+                            <img src="img/img-7.jfif" alt="Shoes" class="rounded-xl" />
+                         <div class="card-body items-center text-center p-5">
+                                 <h2 class="card-title">Anders</h2>
+                                 <p>WORLD RANK-<span>03</span></p>
+                              <div class="card-actions ">
+                                   <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                               </div>
+                           </div>
+                      </div>
+       
+       <!-- player-8 -->   
+                   <div class="card w-full bg-base-100 shadow-xl">
+                        <img src="img/img-8.jfif" alt="Shoes" class="rounded-xl" />
+                           <div class="card-body items-center text-center p-5">
+                                 <h2 class="card-title">Nozomi
+                                  </h2>
+                                 <p>WORLD RANK-<span>08</span></p>
+                                   <div class="card-actions ">
+                                  <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                                </div>
+                           </div>
+                      </div>
+       
+       <!-- player-9 -->   
+                  <div class="card w-full bg-base-100 shadow-xl">
+                            <img src="img/img-9.jfif" alt="Shoes" class="rounded-xl" />
+                         <div class="card-body items-center text-center p-5">
+                              <h2 class="card-title">Kento </h2>
+                               <p>WORLD RANK-<span>02</span></p>
+       
+                         <div class="card-actions ">
+                              <button class="btn btn-primary px-10" onclick="addToTotalPlayer(this)">SELECT</button>
+                       </div>
+                   </div>
+              </div>
+       
+           </div>
+               
+  </section>
      <!-- TOTAL        -->
-     <div class=" pt-5 ps-10 mx-auto">
+     <section class=" pt-5 ps-10 mx-auto">
                 
-<h1 class="text-3xl mx-auto font-bold text-center pb-3	text-yellow-50	">
-    SELECTED PLAYERS - <span id="added-player">0</span>
-</h1>
+        <section> 
+            <div class="border-solid border-2 border-sky-500 bg-blue-400	">
+                <h1 class="text-3xl mx-auto font-bold text-center pb-3	text-yellow-50	">
+                 SELECTED PLAYERS - <span id="added-player" class="">0</span>
+               </h1>
+           </div>
 <!-- tabile -->
-<div class="overflow-x-auto">
-    <table class="table w-full">
-      <!-- head -->
-      <thead>
-        <tr>
-          <th>Serial</th>
-          <th>Name</th>
-          <th>Rank</th>
-        </tr>
-      </thead>
-      <tbody id="palyer-list">
-        <!-- row 1 -->
-        <tr>
-            <!-- <th>1</th>
-            <td>Bayzid</td>
-            <td>01</td> -->
-        </tr>
-      </tbody>
-    </table>
-  </div>
+       
+     <div class="overflow-x-auto mb-10">
+          <table class="table w-full">
+           <!-- head -->
+             <thead>
+               <tr>
+                   <th>Serial No</th>
+                   <th>Name</th>
+                   <th>Rank</th>
+              </tr>
+            </thead>
+          <tbody class="border-solid border-2 border-violet-800	" id="palyer-list">
+       <!-- row 1 -->
+               <tr>
+                <!-- <th>1</th>
+                   <td>Bayzid</td>
+                 <td>01</td> -->
+              </tr>
+            </tbody>
+         </table>
+     </div>
+        </section>
 
   <!-- bugged -->
-      <h1 class="text-center pt-10 pb-5 underline decoration-pink-500 text-3xl text-emerald-300	font-bold ">BUDGET</h1>
-  <label for="input" class="font-medium text-2xl">Per Player : <input id="Per-Player" class="rounded-lg  border-2 " value="" type="number" placeholder="Enter Per Player Cost"></label><br>
-  <div class="text-center mt-5 ">
-    <button id="calculate" class="bg-blue-800 pb-3 font-semibold text-white px-6 py-3 rounded-lg">
-        Calculate
-      </button>
-  </div>
-  <h1 class="text-center mt-5 text-2xl font-bold">
-    Player Expenses:$<span id="player-expense">00</span>
-  </h1>
-  <div class="mt-4">
-    <label for="input" class="font-medium text-2xl ">Manager : <input id="manager-cost" class="rounded-lg pl-2 border-2" value="" type="number" placeholder="Enter Manager Cost"></label>
-  </div>
-  <div class="mt-4">
-    <label for="input" class="font-medium text-2xl">Coach: <input id="coach-cost" class="rounded-lg pl-2 border-2" value="" type="number" placeholder="Enter Coach Cost"></label>
-  </div>
-  <div class="text-center mt-5">
-    <button id="total-calculate" class="bg-blue-800 font-semibold text-white px-6 py-3 rounded-lg">
-   Total Calculate
-  </button>
-</div>
-  <h1 class="text-2xl font-bold text-center mt-5">
-    Total Expenses $<span id="total-expense">00</span>
-  </h1>
+   <section>
+        <div class="border-solid border-2 border-violet-800	 p-4">
+                <div class="pb-5">
+                        <h1 class="text-center bg-gray-800 border-double border-4 border-yellow-700 text-3xl text-white	font-bold ">BUDGET</h1>
+                </div>
+            <label for="input" class="font-medium text-2xl">Per Player : <input id="Per-Player" class="rounded-lg  border-2 " value="" type="number" placeholder="Enter Per Player Cost"></label><br>
+         <div class="text-center mt-5 ">
+            <button id="calculate" class="bg-blue-800 pb-3 font-semibold text-white px-20 py-3 rounded-lg">
+             Calculate </button>
+         </div>
 
-    </div>
+            <h1 class="text-center mt-5 text-2xl font-bold">
+               Player Expenses:$<span id="player-expense">00</span> </h1>
+         <div class="mt-7">
+               <label for="input" class="font-medium text-2xl ">Manager : <input id="manager-cost" class="rounded-lg pl-2 border-2" value="" type="number" placeholder="Enter Manager Cost"></label>
+         </div>
 
+        <div class="mt-7">
+            <label for="input" class="font-medium text-2xl">Coach: <input id="coach-cost" class="rounded-lg pl-2 border-2" value="" type="number" placeholder="Enter Coach Cost"></label>
+        </div>
 
- </div>
-
+        <div class="text-center mt-5">
+           <button id="total-calculate" class="bg-blue-800 font-semibold text-white px-6 py-3 rounded-lg"> Total Calculate</button>
+        </div>
+        
+           <h1 class="text-2xl font-bold text-center mt-5">
+           Total Expenses $<span id="total-expense">00</span>
+           </h1>
+       </div>
+    </section>
 
     </section>
+
+
+         </div>
+  </section>
  </main>
 </body>
 
