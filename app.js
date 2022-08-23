@@ -7,13 +7,14 @@ function selaectedPlayerDisplay (selaectPlayer){
     const tabelBody=document.getElementById("palyer-list");
     tabelBody.innerHTML="";
 
-     for(let i = 0; i < selaectPlayer.length ; i++){
+     for(let i = 0; i < selaectPlayer.length  ; i++){
        
-        if(selaectPlayer.length >= 5 ){
+        if(i > 4  ){
             alert('You can not add more then 5 players');
+            return;
         }
         else{
-        
+           
         }
         const name = totalPlayerArray[i].playerNamne;
         const rank = totalPlayerArray[i].playerRank;
@@ -23,7 +24,7 @@ function selaectedPlayerDisplay (selaectPlayer){
         <td>${name}</td>
         <td>${rank}</td>
         `;
-        tabelBody.appendChild(tr);
+        tabelBody.appendChild(tr); 
      }
 }
 function addToTotalPlayer(element){
